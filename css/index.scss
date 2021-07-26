@@ -1,0 +1,140 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: radial-gradient(white, rgb(68, 224, 204), rgb(104, 93, 93));
+    width: 100%;
+    height: 100vh;
+
+    img {
+        position: absolute;
+        right: -100px;
+        width: 300px;
+    }
+
+    #cube {
+        position: relative;
+        top: 20%;
+        left: 20%;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        animation: animate 5s linear infinite;
+        
+        -webkit-animation: animate 20s linear infinite;
+        .face {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 44%;
+            left: 45%;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+
+        #left{
+            background-color: green;
+            transform: rotateY(-90deg);
+            -webkit-transform: rotateY(-90deg);
+            -moz-transform: rotateY(-90deg);
+            -ms-transform: rotateY(-90deg);
+            -o-transform: rotateY(-90deg);
+            transform-origin: left;
+}
+
+        #right{
+            background-color: darkgoldenrod;
+            transform: rotateY(90deg);
+            transform-origin: right;
+            -webkit-transform: rotateY(90deg);
+            -moz-transform: rotateY(90deg);
+            -ms-transform: rotateY(90deg);
+            -o-transform: rotateY(90deg);
+}
+
+        #top{
+            background-color: darkorchid;
+            transform-origin: top;
+            transform: rotateX(90deg);
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+}
+
+        #bottom{
+            background-color: rgb(218, 241, 11);
+            transform-origin: bottom;
+            transform: rotateX(-90deg);
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+        }
+
+        #front{
+            background-color:rgb(0, 126, 130);
+            transform: translateZ(0px);
+            -webkit-transform: translateZ(0px);
+            -moz-transform: translateZ(0px);
+            -ms-transform: translateZ(0px);
+            -o-transform: translateZ(0px);
+            p {
+                text-align: center;
+                color: lawngreen;
+                font-size: 40px;
+                font-family: algerian;
+            }
+}
+
+        #back{
+            background-color:indigo;
+            transform: translateZ(300px);
+            -webkit-transform: translateZ(300px);
+            -moz-transform: translateZ(300px);
+            -ms-transform: translateZ(300px);
+            -o-transform: translateZ(300px);
+            padding: 5px;
+            span {
+                display: block;
+                letter-spacing: 1px;
+                line-height: 35px;
+                margin-top: 10px;
+                color: goldenrod;
+                text-align: left;
+                margin: auto;
+            }
+            
+        }
+}
+
+
+
+}
+
+
+@keyframes animate {
+    from {
+        transform: rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+        -webkit-transform: rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+        -moz-transform: rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+        -ms-transform: rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+        -o-transform: rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+}
+    to {
+        transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+        -webkit-transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+        -moz-transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+        -ms-transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+        -o-transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+}
+}
