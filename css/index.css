@@ -13,7 +13,7 @@ body {
 
 .container {
   background: radial-gradient(#f3f1f1, #5f2f14, #e6e6e6);
-  width: 100%;
+  width: 90vh;
   height: 100vh;
   display: -ms-grid;
   display: grid;
