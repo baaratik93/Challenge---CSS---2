@@ -22,11 +22,11 @@ body {
 }
 
 .container h1 {
-  color: #7a4579;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #04d6fc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   letter-spacing: 2px;
-  padding: 1rem;
+  padding-right: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -73,7 +73,7 @@ body {
   border-radius: 1rem;
   height: 40px;
   text-align: center;
-  font-size: 5vw;
+  font-size: 3vw;
   padding: 5px;
 }
 
@@ -129,7 +129,7 @@ body {
 .container img {
   position: absolute;
   right: -100px;
-  width: 350px;
+  width: 55vw;
   -webkit-filter: brightness(0.8) saturate(0.3);
           filter: brightness(0.8) saturate(0.3);
   z-index: 300;
@@ -137,21 +137,21 @@ body {
 
 .container #cube {
   position: fixed;
-  top: 20%;
-  left: 20%;
-  width: 300px;
-  height: 300px;
+  top: 65%;
+  left: 10%;
+  right: 10%;
+  bottom: 15%;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  animation: animate 5s linear infinite;
-  -webkit-animation: animate 20s linear infinite;
+  animation: animate 25s alternate infinite;
+  -webkit-animation: animate 25s linear infinite;
 }
 
 .container #cube .face {
-  width: 200px;
-  height: 200px;
+  width: 30vw;
+  height: 30vw;
   position: absolute;
   top: 44%;
   left: 45%;
@@ -219,7 +219,7 @@ body {
 .container #cube #front p {
   text-align: center;
   color: lawngreen;
-  font-size: 40px;
+  font-size: 20px;
   font-family: BigParty;
 }
 
@@ -238,15 +238,16 @@ body {
 .container #cube #back span {
   display: block;
   letter-spacing: 1px;
-  line-height: 35px;
-  margin-top: 10px;
-  color: goldenrod;
+  line-height: 3;
+  font-size: 10px;
+  font-weight: 500;
+  color: yellowgreen;
   text-align: left;
   margin: auto;
 }
 
 .container #cube #dooro {
-  width: 90px;
+  width: 50px;
   transform: translateZ(100px);
   -webkit-transform-origin: center;
           transform-origin: center;
