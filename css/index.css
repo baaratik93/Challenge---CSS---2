@@ -17,13 +17,13 @@ body #galery {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: .3vw;
   background: radial-gradient(#f3f1f1, #e6e6e6);
 }
 
 body #galery img {
-  width: 32vw;
-  height: 32vw;
+  width: 33vw;
+  height: 33vw;
+  margin: .05rem .01rem;
 }
 
 body h1 {
@@ -155,11 +155,12 @@ body h1 {
 }
 
 .container #cube {
-  position: fixed;
-  top: 35%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
   left: 10%;
   right: 10%;
-  bottom: 15%;
+  bottom: 5%;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
